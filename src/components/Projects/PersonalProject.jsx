@@ -23,7 +23,7 @@ const PersonalProject = () => {
                     {personalProjects.map(project => (
                         <Col md={4} className="project-card">
                             <ProjectCard
-                                imgPath={  `/Assets/PersonalProjects/${project.pic}`}
+                                imgPath={  `/Assets/Projects/${project.pic}`}
                                 title={project.name}
                                 description={project.description}
                                 link={project.link}

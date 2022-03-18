@@ -59,7 +59,7 @@ export const personalProjects = [
     {
         name: 'Backend API for DevCamper',
         description: "Real World Backend RESTful API For Bootcamp Directory App. Admin create bootcamp with Geocoding location and pictures.User can enroll on the bootcamp.",
-        pic:"bootcamp.jpg",
+        pic: "bootcamp.png",
         link: 'https://github.com/IshtiaqueNafis/BootCamp',
         madeWith: ['Node', 'Mongo', 'Javascript'],
     },
@@ -75,7 +75,7 @@ export const personalProjects = [
     {
         name: 'Github Finder',
         description: `Lets user search for an github user using React Hooks,Context API & Flux Pattern`,
-        pic: `github.png`,
+        pic: `githubfinder.png`,
         link: 'https://github.com/IshtiaqueNafis/githubfinder',
         madeWith: ['React', 'Redux', "JS"],
 
@@ -105,8 +105,25 @@ export const personalProjects = [
         link: 'https://github.com/IshtiaqueNafis/event-socialpost',
         madeWith: ['Node', 'Mongo', 'Javascript'],
         workInProgress: true
-    }
+    },
+    {
+        name: 'My Money',
+        description: `
+        add delete expenses`,
+        pic: `expense.png`,
+        link: 'https://github.com/IshtiaqueNafis/my-money',
+        madeWith: ['Node', 'Mongo', 'Javascript'],
 
+    },
+    {
+        name: 'The Dojo',
+        description: `
+        Add and manage projcts`,
+        pic: `dojo.png`,
+        link: 'https://github.com/IshtiaqueNafis/the-dojo',
+        madeWith: ['Node', 'Mongo', 'Javascript'],
+
+    }
 
 ]
 
