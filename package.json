@@ -1,6 +1,5 @@
 {
   "name": "portfolios",
-  "homepage": "https://IshtiaqueNafis.github.io/portfolios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
