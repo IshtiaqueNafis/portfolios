@@ -67,8 +67,8 @@ export const personalProjects = [
         name: 'Crown Clothing Ecommerce Store',
         description: "e-commerce application similar to Shopify using React, Redux,React Hooks,React Router,Firebase & Stripe..",
         pic: `crownclothing.png`,
-        link: 'https://github.com/IshtiaqueNafis/crwn-clothing',
-        madeWith: ['React', 'Redux', "JS"],
+        link: 'https://github.com/IshtiaqueNafis/crwn-clothing-v2',
+        madeWith: ['React', 'Redux', "JS","TypeScript"],
 
     },
 
