@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 
-function Footer() {
+const Footer = () => {
   let date = new Date();
   let year = date.getFullYear();
   return (
@@ -18,6 +18,6 @@ function Footer() {
       </Row>
     </Container>
   );
-}
+};
 
 export default Footer;

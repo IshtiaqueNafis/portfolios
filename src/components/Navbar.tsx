@@ -2,15 +2,13 @@ import React, {useState} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/Color logo with background.svg";
-import {Link} from "react-router-dom";
 import {CgFileDocument} from "react-icons/cg";
 import {AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineUser,} from "react-icons/ai";
 
 import {GiDiploma} from "react-icons/gi";
 
-function NavBar() {
-    const [expand, updateExpanded] = useState(false);
+const NavBar = () => {
+    const [expand, updateExpanded] = useState<boolean>(false);
     const [navColour, updateNavbar] = useState(false);
 
     function scrollHandler() {
@@ -34,9 +32,9 @@ function NavBar() {
 
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
-                    onClick={() => {
-                        updateExpanded(expand ? false : "expanded");
-                    }}
+                    // onClick={() => {
+                    //     updateExpanded(expand ? false : "expanded");
+                    // }}
                 >
                     <span></span>
                     <span></span>
@@ -45,15 +43,15 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto" defaultActiveKey="#home">
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                            <Nav.Link onClick={() => updateExpanded(false)}>
                                 <AiOutlineHome style={{marginBottom: "2px"}}/> Home
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
-                                to="/about"
+
+
                                 onClick={() => updateExpanded(false)}
                             >
                                 <AiOutlineUser style={{marginBottom: "2px"}}/> About
@@ -62,8 +60,8 @@ function NavBar() {
 
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
-                                to="/project"
+
+
                                 onClick={() => updateExpanded(false)}
                             >
                                 <AiOutlineFundProjectionScreen
@@ -75,8 +73,8 @@ function NavBar() {
 
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
-                                to="/certificates"
+
+
                                 onClick={() => updateExpanded(false)}
                             >
                                 <GiDiploma style={{marginBottom: "2px", color: 'white'}}/>{" "}
@@ -88,8 +86,8 @@ function NavBar() {
 
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
-                                to="/resume"
+
+
                                 onClick={() => updateExpanded(false)}
                             >
                                 <CgFileDocument style={{marginBottom: "2px"}}/> Resume
@@ -102,6 +100,6 @@ function NavBar() {
             </Container>
         </Navbar>
     );
-}
+};
 
 export default NavBar;

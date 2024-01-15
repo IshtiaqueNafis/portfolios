@@ -9,34 +9,34 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
-  return (
+const Home2 = () => (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{fontSize: "2.6em"}}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I believe in continuous learning so even after school ends I like to learn advance programming concepts from youtube & udemy.
-              <br />
-              <br />I am fluent in
+              I believe in continuous learning so even after school ends I like to learn advance programming concepts
+              from youtube & udemy.
+              <br/>
+              <br/>I am fluent in
               <i>
-                <b className="purple"> C#, Javascript and Python. </b>
+                <b className="purple"> C#, Javascript and Python,Java and React </b>
               </i>
-              <br />
-              <br />
-             I am currently Learning
+              <br/>
+              <br/>
+              I am currently Learning
               <i>
-                <b className="purple"> React with Redux</b> and
+                <b className="purple"> Next.js</b> and
                 also planning to learn {" "}
                 <b className="purple">
-                  Vue & Next.js
+                  Microservices and CI/CD concepts
                 </b>
               </i>
-              <br />
-              <br />
+              <br/>
+              <br/>
 
               <i>
                 <b className="purple font-italic">
@@ -52,7 +52,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar"/>
             </Tilt>
           </Col>
         </Row>
@@ -62,23 +62,23 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons ">
                 <a
-                  href="https://github.com/IshtiaqueNafis"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons "
+                    href="https://github.com/IshtiaqueNafis"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons "
                 >
-                  <AiFillGithub />
+                  <AiFillGithub/>
                 </a>
               </li>
 
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/nafis-ishtiaque-6566b156/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                    href="https://www.linkedin.com/in/nafis-ishtiaque-6566b156/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn/>
                 </a>
               </li>
 
@@ -87,6 +87,5 @@ function Home2() {
         </Row>
       </Container>
     </Container>
-  );
-}
+);
 export default Home2;
