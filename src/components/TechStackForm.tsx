@@ -4,10 +4,7 @@ import {useMutation} from "@tanstack/react-query";
 import {TechStack} from "../entities/techStack";
 import APIClient from "../services/api";
 
-type Inputs = {
-    name: string,
-    URL: string,
-};
+
 const TechStackForm = () => {
 
     const {register, handleSubmit, watch, formState: {errors}} = useForm<Inputs>();
@@ -35,6 +32,10 @@ const TechStackForm = () => {
                 <input {...register("URL", {required: true})} />
                 {/* errors will return when field validation fails  */}
                 {errors.URL && <span>This field is required</span>}
+
+                <input {...register("icon", {required: true})} />
+                {/* errors will return when field validation fails  */}
+                {errors.icon && <span>This field is required</span>}
 
                 <input type="submit"/>
             </form>
