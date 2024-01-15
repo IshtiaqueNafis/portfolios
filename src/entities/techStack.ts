@@ -1,5 +1,8 @@
 export interface TechStack {
-    name: string;
-    URL: string;
-    icon: string;
+    id?: string;
+    data: {
+        name: string;
+        URL: string;
+        icon: string;
+    };
 }

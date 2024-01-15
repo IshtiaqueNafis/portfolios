@@ -1,5 +1,7 @@
 import {firestore} from "./firebase";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, getDocs } from "firebase/firestore";
+
+
 
 class APIClient<T> {
     name: string
@@ -14,6 +16,15 @@ class APIClient<T> {
         });
         return decRef.id
     }
+
+    getDatasFromFireStore = async () => {
+        const querySnapshot = await getDocs(collection(firestore, this.name));
+        const data= querySnapshot.docs.map(doc => ({ id:doc.id, ...doc.data() as T}));
+        return data;
+    }
+
+
+
 }
 
 export default APIClient;

@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import TechStackForm from "../TechStackForm";
+import CourseForm from "../../CourseForm";
 
 function Home() {
   return (
@@ -35,7 +36,7 @@ function Home() {
         </Container>
       </Container>
       {/*<Home2 />*/}
-      <TechStackForm/>
+      <CourseForm/>
     </section>
   );
 }

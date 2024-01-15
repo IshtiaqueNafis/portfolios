@@ -7,7 +7,7 @@ import APIClient from "../services/api";
 
 const TechStackForm = () => {
 
-    const {register, handleSubmit, watch, formState: {errors}} = useForm<Inputs>();
+    const {register, handleSubmit, watch, formState: {errors}} = useForm<TechStack>();
     const apiClient = new APIClient<TechStack>("techStack");
 
     const AddTechStack = useMutation({
@@ -31,11 +31,11 @@ const TechStackForm = () => {
                 {/* include validation with required or other standard HTML validation rules */}
                 <input {...register("URL", {required: true})} />
                 {/* errors will return when field validation fails  */}
-                {errors.URL && <span>This field is required</span>}
+                {errors.data?.URL && <span>This field is required</span>}
 
                 <input {...register("icon", {required: true})} />
                 {/* errors will return when field validation fails  */}
-                {errors.icon && <span>This field is required</span>}
+                {errors.data?.icon && <span>This field is required</span>}
 
                 <input type="submit"/>
             </form>
