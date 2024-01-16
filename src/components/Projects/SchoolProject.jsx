@@ -1,7 +1,5 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import {BiLinkExternal} from "react-icons/bi";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 import {useSelector} from "react-redux";

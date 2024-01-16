@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { BiLinkExternal } from 'react-icons/bi';
+import { MdOutlinePausePresentation } from "react-icons/md";
 
 function ProjectCards(props) {
-    console.log({props})
+
     return (
         <Card className="project-card-view">
             <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -38,12 +39,12 @@ function ProjectCards(props) {
 
                     {(props.isCompleted && props.isPersonal) &&<Button
                         variant="primary"
-                        href={props.link}
+                        href={props.demo}
                         target="_blank"
                         className={"ml-3"}
                         // Add the mb-2 class for margin-bottom
                     >
-                        <BiLinkExternal/> &nbsp;
+                        <MdOutlinePausePresentation /> &nbsp;
                       DEMO
                     </Button> }
                 </div>

@@ -3,7 +3,6 @@ import {Col, Container, Row} from "react-bootstrap";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 import {useSelector} from "react-redux";
-import {personalProjects} from "../../data/projectData";
 
 const PersonalProject = () => {
     const {personalProjects} = useSelector(state => state.projects);
@@ -23,12 +22,13 @@ const PersonalProject = () => {
                     {personalProjects.map(project => (
                         <Col md={4} className="project-card">
                             <ProjectCard
-                                imgPath={  `/Assets/Projects/${project.pic}`}
+                                imgPath={ `/Assets/Projects/${project.pic}`}
                                 title={project.name}
                                 description={project.description}
                                 link={project.link}
                                 isCompleted={project.completed}
                                 isPersonal={true}
+                                demo={project.demo}
                             />
                         </Col>
                     ))}

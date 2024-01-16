@@ -60,17 +60,19 @@ export const personalProjects = [
         name: 'Backend API for DevCamper',
         description: "Real World Backend RESTful API For Bootcamp Directory App. Admin create bootcamp with Geocoding location and pictures.User can enroll on the bootcamp.",
         pic: "bootcamp.png",
-        completed:false,
+        completed: false,
         link: 'https://github.com/IshtiaqueNafis/BootCamp',
         madeWith: ['Node', 'Mongo', 'Javascript'],
     },
+
+
     {
         name: 'Crown Clothing Ecommerce Store',
         description: "e-commerce application similar to Shopify using React, Redux,React Hooks,React Router,Firebase & Stripe..",
         pic: `crownclothing.png`,
-        completed: true,
+        completed: false,
         link: 'https://github.com/IshtiaqueNafis/crwn-clothing-v2',
-        madeWith: ['React', 'Redux', "JS","TypeScript"],
+        madeWith: ['React', 'Redux', "JS", "TypeScript"],
 
     },
 
@@ -90,17 +92,41 @@ export const personalProjects = [
         description: `Narrates a random joke from a API using Fetch, Async/Await, Joke API, Text-to-Speech`,
         pic: `joketeller.png`,
         completed: true,
+        demo: "https://ishtiaquenafis.github.io/Joke_Teller_App/",
         link: 'https://github.com/IshtiaqueNafis/Joke_Teller_App',
         madeWith: ['Node', 'Mongo', 'Javascript'],
 
     },
+
+    {
+        name: 'NASA Mission Control ',
+        description: `This accomplished project successfully deployed a NASA Mission Control application into production using Docker and AWS. Leveraging the latest best practices, it demonstrated the construction of performant full-stack applications with Node.js and MongoDB. The inclusion of real-time data from SpaceX and NASA added a dynamic element to the project, showcasing a comprehensive integration of cutting-edge technologies and ensuring a successful and robust deployment.`,
+        pic: `test.png`,
+        completed: true,
+        demo: "http://3.99.132.219:8000",
+        link: 'https://github.com/IshtiaqueNafis/NasaProject',
+        madeWith: ['Node', 'Mongo', 'Javascript'],
+
+    },
+
+    {
+        name: 'GameHub',
+        description: `This React-based game database project showcases proficiency in building front-end applications with React and TypeScript. Leveraging React Query for efficient data fetching and updating, the project optimizes performance through caching and implements advanced features such as infinite scrolling. State management is effectively handled using reducers, context, and Zustand. Additionally, the project demonstrates expertise in implementing routing with React Router, structuring projects for maintainability, and applying the latest techniques and best practices for writing clean and professional code.`,
+        pic: `img.png`,
+        completed: true,
+        demo: "https://voluble-sunshine-f3b8aa.netlify.app/",
+        link: 'https://github.com/IshtiaqueNafis/gamehubs',
+        madeWith: ['Node', 'Mongo', 'Javascript'],
+
+    },
+
     {
         name: 'Music Player',
         description: `Lets user play music pause and skip to next song`,
         pic: `music.png`,
         completed: true,
         link: 'https://github.com/IshtiaqueNafis/Joke_Teller_App',
-        workingLink:"https://ishtiaquenafis.github.io/MusicPlayerReact/",
+        demo: "https://ishtiaquenafis.github.io/MusicPlayerReact/",
         madeWith: ['Node', 'Mongo', 'Javascript'],
     },
     {
@@ -130,7 +156,6 @@ export const personalProjects = [
         pic: `dojo.png`,
         completed: false,
         link: 'https://github.com/IshtiaqueNafis/the-dojo',
-
         madeWith: ['Node', 'Mongo', 'Javascript'],
 
     }
