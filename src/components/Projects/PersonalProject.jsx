@@ -27,6 +27,8 @@ const PersonalProject = () => {
                                 title={project.name}
                                 description={project.description}
                                 link={project.link}
+                                isCompleted={project.completed}
+                                isPersonal={true}
                             />
                         </Col>
                     ))}

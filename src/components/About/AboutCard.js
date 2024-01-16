@@ -12,8 +12,8 @@ function AboutCard() {
                     <p style={{textAlign: "justify"}}>
                         I am <span className="purple">Nafis Ishtiaque. </span>
 
-                        <br/>I am a currently completing <span
-                        className="purple">Computer Programming Analyst </span> Advanced Diploma
+                        <br/>I Graduated from  <span
+                        className="purple">Computer Programming Analyst </span> Advanced Diploma with Honours
                         at <span className="purple"> George Brown College. </span>
                         <br/>
                         <br/>

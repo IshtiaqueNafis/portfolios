@@ -60,6 +60,7 @@ export const personalProjects = [
         name: 'Backend API for DevCamper',
         description: "Real World Backend RESTful API For Bootcamp Directory App. Admin create bootcamp with Geocoding location and pictures.User can enroll on the bootcamp.",
         pic: "bootcamp.png",
+        completed:false,
         link: 'https://github.com/IshtiaqueNafis/BootCamp',
         madeWith: ['Node', 'Mongo', 'Javascript'],
     },
@@ -67,6 +68,7 @@ export const personalProjects = [
         name: 'Crown Clothing Ecommerce Store',
         description: "e-commerce application similar to Shopify using React, Redux,React Hooks,React Router,Firebase & Stripe..",
         pic: `crownclothing.png`,
+        completed: true,
         link: 'https://github.com/IshtiaqueNafis/crwn-clothing-v2',
         madeWith: ['React', 'Redux', "JS","TypeScript"],
 
@@ -76,6 +78,7 @@ export const personalProjects = [
         name: 'Github Finder',
         description: `Lets user search for an github user using React Hooks,Context API & Flux Pattern`,
         pic: `githubfinder.png`,
+        completed: false,
         link: 'https://github.com/IshtiaqueNafis/githubfinder',
         madeWith: ['React', 'Redux', "JS"],
 
@@ -86,6 +89,7 @@ export const personalProjects = [
         name: 'Joke Teller app',
         description: `Narrates a random joke from a API using Fetch, Async/Await, Joke API, Text-to-Speech`,
         pic: `joketeller.png`,
+        completed: true,
         link: 'https://github.com/IshtiaqueNafis/Joke_Teller_App',
         madeWith: ['Node', 'Mongo', 'Javascript'],
 
@@ -94,7 +98,9 @@ export const personalProjects = [
         name: 'Music Player',
         description: `Lets user play music pause and skip to next song`,
         pic: `music.png`,
+        completed: true,
         link: 'https://github.com/IshtiaqueNafis/Joke_Teller_App',
+        workingLink:"https://ishtiaquenafis.github.io/MusicPlayerReact/",
         madeWith: ['Node', 'Mongo', 'Javascript'],
     },
     {
@@ -102,6 +108,7 @@ export const personalProjects = [
         description: `
         social events application, much like Facebook events or Meetup`,
         pic: `event.png`,
+        completed: false,
         link: 'https://github.com/IshtiaqueNafis/event-socialpost',
         madeWith: ['Node', 'Mongo', 'Javascript'],
         workInProgress: true
@@ -111,6 +118,7 @@ export const personalProjects = [
         description: `
         add delete expenses`,
         pic: `expense.png`,
+        completed: false,
         link: 'https://github.com/IshtiaqueNafis/my-money',
         madeWith: ['Node', 'Mongo', 'Javascript'],
 
@@ -120,7 +128,9 @@ export const personalProjects = [
         description: `
         Add and manage projcts`,
         pic: `dojo.png`,
+        completed: false,
         link: 'https://github.com/IshtiaqueNafis/the-dojo',
+
         madeWith: ['Node', 'Mongo', 'Javascript'],
 
     }

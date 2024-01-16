@@ -23,16 +23,16 @@ function Home2() {
               <br />
               <br />I am fluent in
               <i>
-                <b className="purple"> C#, Javascript and Python. </b>
+                <b className="purple"> C#, Javascript and React </b>
               </i>
               <br />
               <br />
              I am currently Learning
               <i>
-                <b className="purple"> React with Redux</b> and
+                <b className="purple"> TypeScript</b> and
                 also planning to learn {" "}
                 <b className="purple">
-                  Vue & Next.js
+                  MicroServices & CI/CD
                 </b>
               </i>
               <br />
